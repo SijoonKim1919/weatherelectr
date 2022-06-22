@@ -1,10 +1,6 @@
 import streamlit as st
-import pandas as pd
 from tensorflow import keras
 import tensorflow as tf
-import numpy as np
-import csv
-import pydeck as pd
 def custom_loss(y_actual, y_pred):
   n=tf.pow(y_actual-y_pred, 6)
   return n
